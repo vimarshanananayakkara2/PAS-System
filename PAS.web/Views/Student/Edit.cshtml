@@ -1,0 +1,24 @@
+﻿@model PAS.Web.Models.ProjectProposal
+
+<h2>Edit Proposal</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label>Title</label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Abstract</label>
+        <textarea asp-for="Abstract" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label>Technical Stack</label>
+        <input asp-for="TechnicalStack" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Update</button>
+</form>
